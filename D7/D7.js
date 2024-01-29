@@ -67,8 +67,13 @@ console.log(nsoloPari);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-//somare il numeri di una array
 
+
+
+
+/* ESERCIZIO 5 (reduce)
+  Scrivi una funzione per sommare i numeri contenuti in un array
+*/
 
 function sumArray(array) {
   return array.reduce((sum, value) => sum + value, 0);
@@ -76,11 +81,6 @@ function sumArray(array) {
 const array = [1,2,3,5,8,9,12,13,16,17,18,22];
 console.log(sumArray(array));
 
-
-
-/* ESERCIZIO 5 (reduce)
-  Scrivi una funzione per sommare i numeri contenuti in un array
-*/
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
