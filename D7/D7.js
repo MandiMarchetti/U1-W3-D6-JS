@@ -9,15 +9,15 @@
 // converter a stringa em um resultado maiusculo
 
 function concatFrase(great, news){
-  const firstWord = great.slice(0,2);
-  const secondWord = news.slice(-3);
-  const concat = firstWord + secondWord;
+  const firstWord = great.slice(0,2); // per selezionare due primi caratteri della prima parola (parametro) è 0 (partenza), 2 (posizione)
+  const secondWord = news.slice(-3); // per selezionare tre ultimi caratteri della seconda parola (parametro) è -3
+  const concat = firstWord + secondWord; // crio una variabile per concatenare
 
-  return concat;
+  return concat; // chiamo il resultato della ultima variabile (concat)
 }
 
-const result = concatFrase("great", "news");
-console.log (result);
+const result = concatFrase("great", "news"); // chiamo in una nuova variabili, metendo in parentesi le parole come stringhe
+console.log (result); // chiamo il risultato della nuova variabili.
 
 
 /* ESERCIZIO 2 (for)
@@ -67,7 +67,7 @@ console.log(nsoloPari);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-
+//???
 
 
 
@@ -83,8 +83,17 @@ console.log(sumArray(array));
 
 
 /* ESERCIZIO 6 (map)
-  Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
+  Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array 
+  con tutti i valori del precedente incrementati di n
 */
+
+function mapping (p){
+  const numbers = [2, 3, 6, 10, 40];
+
+  const numbersMapped = numbers.map(num => num * 2);
+
+}
+console.log(numbersMapped);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
